@@ -99,7 +99,7 @@
 
 -(void)viewDidLoad
 {
-    self.cellCount = 20;
+    self.cellCount = 5;
     UITapGestureRecognizer* tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
     [self.collectionView addGestureRecognizer:tapRecognizer];
     [self.collectionView registerClass:[Cell class] forCellWithReuseIdentifier:@"MY_CELL"];
@@ -118,25 +118,34 @@
     return cell;
 }
 
-- (void)handleTapGesture:(UITapGestureRecognizer *)sender {
-    
+- (void)handleTapGesture:(UITapGestureRecognizer *)sender
+{
     if (sender.state == UIGestureRecognizerStateEnded)
     {
         CGPoint initialPinchPoint = [sender locationInView:self.collectionView];
         NSIndexPath* tappedCellPath = [self.collectionView indexPathForItemAtPoint:initialPinchPoint];
         if (tappedCellPath!=nil)
         {
-            self.cellCount = self.cellCount - 1;
+            self.cellCount = self.cellCount - 8;
             [self.collectionView performBatchUpdates:^{
-                [self.collectionView deleteItemsAtIndexPaths:[NSArray arrayWithObject:tappedCellPath]];
+                [self.collectionView deleteItemsAtIndexPaths:[NSArray arrayWithObjects:
+                        [NSIndexPath indexPathForItem:1 inSection:0],
+                        [NSIndexPath indexPathForItem:2 inSection:0],
+                        [NSIndexPath indexPathForItem:3 inSection:0],
+                        [NSIndexPath indexPathForItem:4 inSection:0],
+                        [NSIndexPath indexPathForItem:5 inSection:0],
+                        [NSIndexPath indexPathForItem:6 inSection:0],
+                        [NSIndexPath indexPathForItem:7 inSection:0],
+                        [NSIndexPath indexPathForItem:8 inSection:0],
+                        nil]];
                 
             } completion:nil];
         }
         else
         {
-            self.cellCount = self.cellCount + 1;
+            self.cellCount = self.cellCount + 3;
             [self.collectionView performBatchUpdates:^{
-                [self.collectionView insertItemsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForItem:0 inSection:0]]];
+                [self.collectionView insertItemsAtIndexPaths:[NSArray arrayWithObjects:[NSIndexPath indexPathForItem:2 inSection:0], [NSIndexPath indexPathForItem:3 inSection:0], [NSIndexPath indexPathForItem:4 inSection:0], nil]];
             } completion:nil];
         }
     }

@@ -113,35 +113,43 @@
     CGSize size = self.collectionView.frame.size;
     _cellCount = [[self collectionView] numberOfItemsInSection:0];
     _center = CGPointMake(size.width / 2.0, size.height / 2.0);
-    _radius = MIN(size.width, size.height) / 2.5;
 }
 
 -(CGSize)collectionViewContentSize
 {
-    return [self collectionView].frame.size;
+    return CGSizeMake([self collectionView].frame.size.width, _cellCount * 100 + 100);
 }
 
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)path
 {
+    NSLog(@"ATTRIBUTES,       %@", path);
     UICollectionViewLayoutAttributes* attributes = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:path];
     attributes.size = CGSizeMake(ITEM_SIZE, ITEM_SIZE);
-    attributes.center = CGPointMake(_center.x + _radius * cosf(2 * path.item * M_PI / _cellCount),
-                                    _center.y + _radius * sinf(2 * path.item * M_PI / _cellCount));
+    attributes.center = CGPointMake(_center.x, path.item * 100 + 100);
     return attributes;
 }
 
 -(NSArray*)layoutAttributesForElementsInRect:(CGRect)rect
 {
-    NSMutableArray* attributes = [NSMutableArray array];
-    for (NSInteger i=0 ; i < self.cellCount; i++) {
+    NSMutableArray *attributesArray = [NSMutableArray array];
+    for (NSInteger i = 0 ; i < self.cellCount; i++)
+    {
         NSIndexPath* indexPath = [NSIndexPath indexPathForItem:i inSection:0];
-        [attributes addObject:[self layoutAttributesForItemAtIndexPath:indexPath]];
+        UICollectionViewLayoutAttributes *attributes = [self layoutAttributesForItemAtIndexPath:indexPath];
+        attributes.size = CGSizeMake(ITEM_SIZE, ITEM_SIZE);
+        attributes.center = CGPointMake(_center.x, indexPath.item * 100 + 100);
+        if (CGRectIntersectsRect(rect, attributes.frame))
+        {
+            NSLog(@"Returned: %@", indexPath);
+            [attributesArray addObject:attributes];
+        }
     }
-    return attributes;
+    return attributesArray;
 }
 
 - (void)prepareForCollectionViewUpdates:(NSArray *)updateItems
 {
+    NSLog(@"COLLECTION VIEW UPDATES");
     // Keep track of insert and delete index paths
     [super prepareForCollectionViewUpdates:updateItems];
     
@@ -163,6 +171,7 @@
 
 - (void)finalizeCollectionViewUpdates
 {
+    NSLog(@"FINALIZE UPDATES");
     [super finalizeCollectionViewUpdates];
     // release the insert and delete index paths
     self.deleteIndexPaths = nil;
@@ -174,6 +183,7 @@
 // even gets called when deleting cells!
 - (UICollectionViewLayoutAttributes *)initialLayoutAttributesForAppearingItemAtIndexPath:(NSIndexPath *)itemIndexPath
 {
+    NSLog(@"INITIAL ATTRIBUTES, %@", itemIndexPath);
     // Must call super
     UICollectionViewLayoutAttributes *attributes = [super initialLayoutAttributesForAppearingItemAtIndexPath:itemIndexPath];
     
@@ -185,7 +195,7 @@
         
         // Configure attributes ...
         attributes.alpha = 0.0;
-        attributes.center = CGPointMake(_center.x, _center.y);
+        attributes.center = CGPointMake(0, _center.y);
     }
     
     return attributes;
@@ -196,6 +206,7 @@
 // even gets called when inserting cells!
 - (UICollectionViewLayoutAttributes *)finalLayoutAttributesForDisappearingItemAtIndexPath:(NSIndexPath *)itemIndexPath
 {
+    NSLog(@"FINAL ATTRIBUTES, %@", itemIndexPath);
     // So far, calling super hasn't been strictly necessary here, but leaving it in
     // for good measure
     UICollectionViewLayoutAttributes *attributes = [super finalLayoutAttributesForDisappearingItemAtIndexPath:itemIndexPath];
@@ -208,7 +219,7 @@
         
         // Configure attributes ...
         attributes.alpha = 0.0;
-        attributes.center = CGPointMake(_center.x, _center.y);
+        attributes.center = CGPointMake(0, _center.y);
         attributes.transform3D = CATransform3DMakeScale(0.1, 0.1, 1.0);
     }
     
