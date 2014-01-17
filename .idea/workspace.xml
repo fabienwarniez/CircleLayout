@@ -4,6 +4,7 @@
     <list default="true" id="d0cbe4f1-d086-4940-8da8-950a2fd37e38" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CircleLayout/CircleLayout.m" afterPath="$PROJECT_DIR$/CircleLayout/CircleLayout.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CircleLayout/ViewController.m" afterPath="$PROJECT_DIR$/CircleLayout/ViewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CircleLayout.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,28 +27,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="CircleLayout.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CircleLayout/CircleLayout.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="139" column="1" selection-start="6460" selection-end="6460" vertical-scroll-proportion="0.0" vertical-offset="1515" max-vertical-offset="3555">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewController.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CircleLayout/ViewController.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="128" column="37" selection-start="6195" selection-end="6195" vertical-scroll-proportion="0.41253263" vertical-offset="1747" max-vertical-offset="2460">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="main.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CircleLayout/main.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="0" selection-start="5030" selection-end="5030" vertical-scroll-proportion="0.0" vertical-offset="1151" max-vertical-offset="1620">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ViewController.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CircleLayout/ViewController.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="55" selection-start="6406" selection-end="6406" vertical-scroll-proportion="0.0" vertical-offset="1770" max-vertical-offset="2385">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CircleLayout.m" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CircleLayout/CircleLayout.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="197" column="41" selection-start="8493" selection-end="8493" vertical-scroll-proportion="0.26439232" vertical-offset="2831" max-vertical-offset="3525">
+            <state line="101" column="0" selection-start="5030" selection-end="5030" vertical-scroll-proportion="0.0" vertical-offset="1515" max-vertical-offset="1650">
               <folding />
             </state>
           </provider>
@@ -71,8 +72,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/CircleLayout/ViewController.m" />
         <option value="$PROJECT_DIR$/CircleLayout/CircleLayout.m" />
+        <option value="$PROJECT_DIR$/CircleLayout/ViewController.m" />
       </list>
     </option>
   </component>
@@ -106,7 +107,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Cidr.FilesView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -135,24 +135,33 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Cidr.FilesView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="true" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Application.CircleLayout">
-    <configuration default="false" name="CircleLayout" type="AppleRunConfiguration" factoryName="Application" temporary="true" SCHEME_NAME="CircleLayout" PROJECT_NAME="CircleLayout" TARGET_NAME="CircleLayout" CONFIG_NAME="Debug" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="CircleLayout" RUN_TARGET_NAME="CircleLayout" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+    <configuration default="false" name="CircleLayout" type="AppleRunConfiguration" factoryName="Application" temporary="true" SCHEME_NAME="CircleLayout" PROJECT_NAME="CircleLayout" TARGET_NAME="CircleLayout" CONFIG_NAME="Debug" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="CircleLayout" RUN_TARGET_NAME="CircleLayout" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
       <envs />
       <RunnerSettings RunnerId="AppRunner" />
       <ConfigurationWrapper RunnerId="AppRunner" />
       <method />
     </configuration>
     <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PROJECT_NAME="CircleLayout" TARGET_NAME="CircleLayout" CONFIG_NAME="Debug" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="CircleLayout" RUN_TARGET_NAME="CircleLayout" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" PASS_PARENT_ENVS="FALSE" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="OCGoogleTestRunConfigurationType" factoryName="Google Test" PROJECT_NAME="CircleLayout" TARGET_NAME="CircleLayout" CONFIG_NAME="Debug" PASS_PARENT_ENVS="FALSE" TEST_MODE="SUITE_TEST">
       <envs />
       <method />
     </configuration>
@@ -176,25 +185,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32971016" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32971016" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16937192" sideWeight="0.60024154" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39975846" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16937192" sideWeight="0.4963768" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5036232" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -209,9 +218,23 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CircleLayout/CircleLayout.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="143" column="24" selection-start="6661" selection-end="6661" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CircleLayout/ViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="55" selection-start="6406" selection-end="6406" vertical-scroll-proportion="0.0" vertical-offset="1770" max-vertical-offset="2385">
+        <state line="101" column="22" selection-start="5033" selection-end="5033" vertical-scroll-proportion="0.0" vertical-offset="1515" max-vertical-offset="2460">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CircleLayout/main.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="0" selection-start="5030" selection-end="5030" vertical-scroll-proportion="0.0" vertical-offset="1515" max-vertical-offset="1650">
           <folding />
         </state>
       </provider>
@@ -225,7 +248,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CircleLayout/CircleLayout.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="197" column="41" selection-start="8493" selection-end="8493" vertical-scroll-proportion="0.26439232" vertical-offset="2831" max-vertical-offset="3525">
+        <state line="139" column="1" selection-start="6460" selection-end="6460" vertical-scroll-proportion="0.0" vertical-offset="1515" max-vertical-offset="3555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CircleLayout/ViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="128" column="37" selection-start="6195" selection-end="6195" vertical-scroll-proportion="0.41253263" vertical-offset="1747" max-vertical-offset="2460">
           <folding />
         </state>
       </provider>
